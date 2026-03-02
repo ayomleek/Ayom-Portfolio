@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayom Leek - Web Developer</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header>
+        <nav class="navbar section-content">
+            <h2 class="nav-logo">
+                <a href="/index.html" class="logo-text">Ayom Leek</a>
+            </h2>
+
+            <ul class="nav-menu">
+                <button id="menu-close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/assets/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/assets/projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/assets/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <button id="menu-open-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- === HERO SECTION === -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-text">Hey, I'm <span class="highlight">Ayom Leek</span></h1>
+                    <p class="typing-text">I love <span class="typing-text-inner"></span></p>
+                    <div class="hero-buttons">
+                        <a href="/assets/contact.html" class="btn btn-outline">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === ABOUT PREVIEW SECTION === -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-preview-grid">
+                    <div class="about-preview-content">
+                        <h2>About Me</h2>
+                        <p>I am a passionate and motivated Junior Web Developer with a solid foundation in visual design and front-end web development. While I am in the early stages of my professional journey, I have built my skills through personal projects, practice and continuous learning. I am eager to grow, take on new challenges and contribute to a team where I can learn while adding value.</p>
+                        <a href="/assets/about.html" class="btn">Get to Know Me</a>
+                    </div>
+                    <div class="about-preview-image">
+                        <img src="/assets/img/about.jpg" alt="Ayom Leek profile" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === SERVICES PREVIEW SECTION === -->
+        <section class="services-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Services</h2>
+                    <p>Transforming ideas into powerful digital experiences</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Web Development -->
+                    <div class="services-card">
+                        <div class="services-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom web solutions using modern frameworks to deliver responsive, engaging user experiences.</p>
+                        <a href="/assets/projects.html#web-development" class="read-more">More Info <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 2: WordPress Development -->
+                    <div class="services-card">
+                        <div class="services-icon">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <h3>WordPress Development</h3>
+                        <p>Custom WordPress themes and plugins tailored to your specific business needs with easy content management.</p>
+                        <a href="/assets/projects.html#wordpress" class="read-more">More Info <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 3: Web Design -->
+                    <div class="services-card">
+                        <div class="services-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>User-focused web design combining creative visuals with intuitive navigation.</p>
+                        <a href="/assets/projects.html#webdesign" class="read-more">More Info <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 4: Cross-Device Design -->
+                    <div class="services-card">
+                        <div class="services-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Cross-Device Design</h3>
+                        <p>Building mobile-friendly sites that deliver perfect experiences on every screen.</p>
+                        <a href="/assets/projects.html#mobile-first" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="/assets/projects.html" class="btn">Explore my Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- === RECENT PROJECTS SECTION === -->
+        <section class="recent-projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Portfolio</h2>
+                    <p>A glimpse at my recent projects</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Business Website -->
+                    <div class="project-card">
+                        <a href="https://thebusinessapostle.co.ke/" class="project-image-link" target="_blank">
+                            <div class="project-image">
+                                <img src="img/business.png" alt="Business Website">
+                                <div class="project-overlay">
+                                    <h3>Business Website</h3>
+                                    <p>A responsive website for a local business with booking system</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3>Business Website</h3>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Task Manager -->
+                    <div class="project-card">
+                        <a href="https://weekly-taskmanager.netlify.app/" class="project-image-link" target="_blank">
+                            <div class="project-image">
+                                <img src="img/task.png" alt="Task Manager">
+                                <div class="project-overlay">
+                                    <h3>Task Manager</h3>
+                                    <p>Interactive task management application with delete, edit and complete functionality</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3>Task Manager</h3>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Simple Calculator -->
+                    <div class="project-card">
+                        <a href="#" class="project-image-link" target="_blank">
+                            <div class="project-image">
+                                <img src="/assets/img/calculator.png" alt="Simple calculator">
+                                <div class="project-overlay">
+                                    <h3>Simple Calculator</h3>
+                                    <p>A clean and functional calculator for everyday math</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3>Simple Calculator</h3>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer About -->
+                <div class="footer-about">
+                    <h3>Ayom Leek</h3>
+                    <p>Junior web developer passionate about creating clean, functional websites.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ayom-leek/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ayomleek" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/@ayom.leek.2025" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Footer Quick Links -->
+                <div class="footer-links" id="footer-1">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/assets/about.html">About</a></li>
+                        <li><a href="/assets/projects.html">Projects</a></li>
+                        <li><a href="/assets/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Contact Info -->
+                <div class="footer-contact" id="footer-2">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ayomleek@gmail.com">ayomleek@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+254792920744">+254792920744</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kakuma, Kenya</p>
+                </div>
+
+                <!-- Footer Newsletter -->
+                <div class="footer-newsletter" id="footer-3">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe for the latest updates, tips and insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Ayom Leek Portfolio. All Rights Reserved</p>
+                <div class="footer-bottom-links">
+                    <a href="/index.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
