@@ -156,6 +156,7 @@ header {
     position: fixed;
     border-bottom: var(--accent-color) 4px solid;
     width: 100%;
+    padding: 0 50px;
     z-index: 5;
     top: 0;
 }
