@@ -1,0 +1,603 @@
+/* ============================================================================
+   AYOM LEEK - RESUME STYLESHEET
+   Author: Ayom Leek
+   Description: Main stylesheet for resume page with education, experience,
+                skills and awards sections. Uses CSS variables for consistency.
+   ============================================================================ */
+
+.container {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+/* ===== REUSABLE COMPONENTS ===== */
+.ftco-section {
+    padding: 7em 0;
+    position: relative;
+}
+
+.ftco-no-pb {
+    padding-bottom: 0 !important;
+}
+
+/* ===== GRID SYSTEM ===== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    flex: 0 0 16.666%;
+    max-width: 16.666%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+/* ============================================================================
+   RESUME NAVIGATION STYLES
+   Vertical navigation menu for resume sections
+   ============================================================================ */
+
+#resume-navigation {
+    position: sticky;
+    top: 30px;
+    background: var(--card-bg);
+    border-radius: var(--border-radius-s);
+    box-shadow: var(--box-shadow);
+    padding: 20px 0;
+}
+
+#resume-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#resume-navigation ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles for all resume navigation links */
+#resume-navigation ul li a {
+    display: block;
+    padding: 12px 25px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    border-left: 3px solid transparent;
+    transition: var(--transition);
+}
+
+/* Hover state for resume navigation links */
+#resume-navigation ul li a:hover {
+    background: rgba(255, 87, 34, 0.05);
+    border-left-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Active state for current section in resume navigation */
+#resume-navigation ul li a.active {
+    background: rgba(255, 87, 34, 0.1);
+    border-left-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+/* ===== SECTION HEADINGS ===== */
+.heading {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.heading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+/* ============================================================================
+   RESUME ENTRY STYLES
+   Cards for education, experience and awards entries
+   ============================================================================ */
+
+.resume-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(150,150,150,0.3);
+    padding-bottom: 20px;
+    transition: all 0.6s ease;
+    display: flex;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+/* Icon container for all resume entries */
+.resume-wrap .icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: var(--border-radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+}
+
+/* Font Awesome icons within resume entries */
+.resume-wrap .icon i {
+    color: var(--white-color);
+    font-size: 36px;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect for resume entry icons */
+.resume-wrap:hover .icon {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.resume-wrap:hover .icon i {
+    color: var(--white-color);
+}
+
+/* Text content area of resume entries */
+.resume-wrap .text {
+    width: calc(100% - 80px);
+    padding-left: 20px;
+}
+
+/* Date styling for resume entries */
+.resume-wrap .date {
+    font-weight: var(--font-weight-bold);
+    font-size: 16px;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.resume-wrap h2 {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.resume-wrap .position {
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.resume-wrap p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.resume-wrap ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #666;
+}
+
+.resume-wrap ul li {
+    margin-bottom: 5px;
+}
+
+/* ============================================================================
+   RESUME HERO SECTION
+   Full-width banner at top of resume page
+   ============================================================================ */
+
+.resume-hero {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 60px;
+    background: linear-gradient(135deg, rgb(163, 163, 163) 80%, var(--primary-dark) 70%, var(--primary-color) 0%);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.resume-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.resume-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.resume-hero-content {
+    text-align: center;
+    color: var(--white-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-hero-title {
+    color: var(--light-text);
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(66, 66, 66, 0.3);
+    position: relative;
+    display: inline-block;
+}
+
+/* Animated underline for hero title */
+.resume-hero-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+    animation: resumeWidthPulse 2s ease infinite;
+}
+
+.resume-hero-subtitle {
+    font-size: 1.3rem;
+    margin: 25px 0 20px;
+    opacity: 0.95;
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.5px;
+}
+
+.resume-hero-breadcrumb {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.resume-hero-breadcrumb a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resume-hero-breadcrumb a:hover {
+    color: var(--accent-color);
+}
+
+.resume-hero-breadcrumb .separator {
+    margin: 0 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.resume-hero-breadcrumb .current {
+    color: var(--accent-color);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Decorative background circles */
+.resume-hero::before,
+.resume-hero::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.116);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.resume-hero::before {
+    top: -3px;
+    right: -80px;
+    animation: resumeFloat 12s ease-in-out infinite;
+}
+
+.resume-hero::after {
+    bottom: -80px;
+    left: -80px;
+    animation: resumeFloat 15s ease-in-out infinite reverse;
+}
+
+/* ============================================================================
+   ANIMATIONS
+   Keyframe definitions for various animations
+   ============================================================================ */
+
+@keyframes resumeWidthPulse {
+    0%, 100% {
+        width: 80px;
+        opacity: 1;
+    }
+    50% {
+        width: 120px;
+        opacity: 0.8;
+    }
+}
+
+@keyframes resumeFloat {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(20px, -20px) scale(1.1);
+    }
+}
+
+@keyframes resumeFadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes resumeFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Classes */
+.animate-resume-title {
+    animation: resumeFadeInDown 0.8s ease-out forwards;
+}
+
+.animate-resume-subtitle {
+    animation: resumeFadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.animate-resume-breadcrumb {
+    animation: resumeFadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* ===== SKILLS SECTION STYLES ===== */
+.skill-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 87, 34, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+
+.skill-icon {
+    font-size: 36px;
+    color: var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+.skill-icon-wrapper:hover {
+    background: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.skill-icon-wrapper:hover .skill-icon {
+    color: var(--white-color);
+}
+
+/* ===== AWARDS SECTION STYLES ===== */
+.page.four .resume-wrap {
+    transition: all 0.4s ease;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+.page.four .resume-wrap:hover {
+    background: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.15);
+}
+
+.page.four .resume-wrap:hover h2,
+.page.four .resume-wrap:hover .position,
+.page.four .resume-wrap:hover p,
+.page.four .resume-wrap:hover .date {
+    color: var(--white-color);
+}
+
+.page.four .resume-wrap h2,
+.page.four .resume-wrap .position,
+.page.four .resume-wrap p,
+.page.four .resume-wrap .date {
+    transition: color 0.4s ease;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.pl-3 {
+    padding-left: 15px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* ===== PAGE SECTIONS ===== */
+.page {
+    padding: 30px 0;
+    scroll-margin-top: 30px;
+}
+
+/* ===== TOOLTIP STYLING ===== */
+[title] {
+    position: relative;
+    cursor: pointer;
+}
+
+[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-color);
+    color: var(--light-text);
+    padding: 5px 10px;
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-s);
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   Media queries for different screen sizes
+   ============================================================================ */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .col-md-3, .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    #resume-navigation {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+    }
+    
+    .col {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        margin-bottom: 20px;
+    }
+    
+    .heading {
+        font-size: 28px;
+    }
+    
+    .resume-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .resume-wrap .icon {
+        margin: 0 auto 15px;
+    }
+    
+    .resume-wrap .text {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .resume-wrap ul {
+        text-align: left;
+    }
+    
+    .resume-hero {
+        padding: 60px 0 40px;
+    }
+    
+    .resume-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .resume-hero-subtitle {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .skill-icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-icon {
+        font-size: 26px;
+    }
+    
+    .resume-hero-title {
+        font-size: 2rem;
+    }
+    
+    .resume-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .resume-hero::before,
+    .resume-hero::after {
+        width: 150px;
+        height: 150px;
+    }
+}
