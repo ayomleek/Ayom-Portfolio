@@ -5,11 +5,6 @@
                 skills and awards sections. Uses CSS variables for consistency.
    ============================================================================ */
 
-.container {
-    max-width: var(--site-max-width);
-    margin: 0 auto;
-    padding: 100px 30px;
-}
 
 /* ===== REUSABLE COMPONENTS ===== */
 .ftco-section {
