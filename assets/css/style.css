@@ -841,12 +841,12 @@ header .navbar {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background: var(--white-color);
+        background: var(--light-pink-color);
         padding-top: 100px;
         align-items: center;
         transition: left 0.3s ease;
         z-index: 1000;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
     }
     
     body.open-mobile-menu .navbar .nav-menu {
@@ -872,8 +872,9 @@ header .navbar {
     .navbar .nav-menu .nav-link {
         color: var(--dark-color);
         display: block;
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-m);
         margin-top: 17px;
+        padding: 8px 16px;
     }
     
     #menu-close-button, 
